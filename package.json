@@ -1,0 +1,20 @@
+{
+  "name": "ipfs-function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify public/index.js > public/bundle.js",
+    "start": "http-server -c-1 -p 12345 public",
+    "dev": "npm run bundle && npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "ipfs": "^0.52.2",
+    "ipfs-core": "^0.3.0",
+    "it-all": "^1.0.4"
+  }
+}
